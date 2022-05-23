@@ -1032,7 +1032,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 55,
+        amountOfImages: 56,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1557,11 +1557,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 24; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1578,11 +1578,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 25; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -2203,6 +2203,27 @@
                 </div>
             </li>
         
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 55; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2e9538-f1a0-4520-ac0c-5d8260803b6a.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ab2e9538-f1a0-4520-ac0c-5d8260803b6a.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2e9538-f1a0-4520-ac0c-5d8260803b6a.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ab2e9538-f1a0-4520-ac0c-5d8260803b6a.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
     </ul>
 
     <!-- Gallery Modal -->
@@ -2446,7 +2467,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 24">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2454,7 +2475,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 25">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/32aaa6a1-1f10-4a99-9015-c64ecc88799e.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d85861e2-6335-47e3-9e19-2de1694099f0.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2687,6 +2708,14 @@
                                     <li class="flex flex-col" x-show="activeImage === 54">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4e3f2c53-70d9-42bc-926f-87e2ee9b25bc.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 55">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab2e9538-f1a0-4520-ac0c-5d8260803b6a.jpeg" alt="Home Cleaning for Upstate Pressure Washing LLC in Spartanburg, SC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -3129,57 +3158,57 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196258"
-                                                    name="196258"
+                                                    id="contact-service-215753"
+                                                    name="215753"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwash"
                                             />
-                                            <label for="contact-label-service-196258" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                            <label for="contact-label-service-215753" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196259"
-                                                    name="196259"
+                                                    id="contact-service-215754"
+                                                    name="215754"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Cleaning"
                                             />
-                                            <label for="contact-label-service-196259" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                            <label for="contact-label-service-215754" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196260"
-                                                    name="196260"
+                                                    id="contact-service-215755"
+                                                    name="215755"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Hardscape Cleaning"
                                             />
-                                            <label for="contact-label-service-196260" class="ml-3 text-sm font-medium text-gray-700">Hardscape Cleaning</label>
+                                            <label for="contact-label-service-215755" class="ml-3 text-sm font-medium text-gray-700">Hardscape Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196261"
-                                                    name="196261"
+                                                    id="contact-service-215756"
+                                                    name="215756"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fence Washing"
                                             />
-                                            <label for="contact-label-service-196261" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                            <label for="contact-label-service-215756" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196262"
-                                                    name="196262"
+                                                    id="contact-service-215757"
+                                                    name="215757"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter cleaning"
                                             />
-                                            <label for="contact-label-service-196262" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
+                                            <label for="contact-label-service-215757" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
                                         </div>
                                         
                                     </div>
@@ -3210,57 +3239,57 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196258"
-                                                    name="196258"
+                                                    id="contact-service-215753"
+                                                    name="215753"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwash"
                                             />
-                                            <label for="contact-label-service-196258" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                            <label for="contact-label-service-215753" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196259"
-                                                    name="196259"
+                                                    id="contact-service-215754"
+                                                    name="215754"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Cleaning"
                                             />
-                                            <label for="contact-label-service-196259" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                            <label for="contact-label-service-215754" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196260"
-                                                    name="196260"
+                                                    id="contact-service-215755"
+                                                    name="215755"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Hardscape Cleaning"
                                             />
-                                            <label for="contact-label-service-196260" class="ml-3 text-sm font-medium text-gray-700">Hardscape Cleaning</label>
+                                            <label for="contact-label-service-215755" class="ml-3 text-sm font-medium text-gray-700">Hardscape Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196261"
-                                                    name="196261"
+                                                    id="contact-service-215756"
+                                                    name="215756"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fence Washing"
                                             />
-                                            <label for="contact-label-service-196261" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                            <label for="contact-label-service-215756" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-196262"
-                                                    name="196262"
+                                                    id="contact-service-215757"
+                                                    name="215757"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter cleaning"
                                             />
-                                            <label for="contact-label-service-196262" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
+                                            <label for="contact-label-service-215757" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
                                         </div>
                                         
                                     </div>
